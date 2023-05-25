@@ -1,0 +1,104 @@
+*{
+  font-family: 'Gunplay';
+  margin:0;
+}
+
+#container{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    background-color: turquoise;
+}
+nav{
+text-align: center;
+}
+
+#menu ul{
+list-style: none;
+}
+#menu ul li{
+  display: inline;
+  text-transform: uppercase;
+
+  padding: 50px;
+}
+#menu ul li a {
+  text-decoration: none;  
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#titulo h1{
+       background-color: aquamarine;
+       padding: 9 px;
+}
+
+
+@font-face {
+  font-family:'Gunplay';
+  src: url(fonts/gunplay\ rg.otf)format('opentype'), url(fonts/gunplay\ 3d.otf)format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+}
+.search-box{
+  position: absolute;
+  top: 2%;
+  left: 40%;
+  transform: translate(2%,-40%);
+  background:rgb(87, 103, 97) ;
+  height: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-text{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 40px;
+  width: 0;
+  transition: .5s;
+  font-family: 'GunPlay';
+}
+
+::-webkit-input-placeholder{
+  color: aqua;
+
+}
+
+.search-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:rgb(87, 103, 97) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.search-box:hover > .search-text{
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+  background: white;
+}
+#logo{
+  color: #ffffff;
+  font-family: 'Gunplay';
+  left: 15px;
+}
